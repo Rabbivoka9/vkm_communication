@@ -145,12 +145,13 @@ section{
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	background-color: var(--white);
-	box-shadow: var(--box-shadow);
+       background: url('../images/home.png') no-repeat;
+	/* box-shadow: var(--box-shadow); */
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2rem 9%;
+	padding: 2rem 4%;
 }
 
 .header .logo {
@@ -166,7 +167,7 @@ section{
 
 .header .navbar a {
 	font-size: 1.7rem;
-	color: var(--black);
+	color: var(--white);
 	margin: 0 1rem;
 	padding-block: 1rem;
 }
@@ -259,11 +260,13 @@ section{
 	cursor: pointer;
 }
 
+
+
 .home {
-	min-height: 80vh;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	background: linear-gradient(rgba(103, 4, 4, 0.7), rgba(6, 0, 0, 0.7)), url('../images/home.jpg') no-repeat;
+	background: url('../images/home.png') no-repeat;
 	background-size: cover;
 	background-position: center
 }
@@ -296,7 +299,8 @@ section{
 }
 
 .about .container .about-image img {
-	width: 80%;
+	margin-top: -50px;
+	height: 120%;
 }
 
 .about .container .about-image .about-img {
@@ -324,6 +328,10 @@ section{
 	color: #444;
 	padding: 1rem 0;
 	line-height: 1.8;
+}
+
+.subjects{
+	background-color: rgb(243, 239, 239);
 }
 
 .subjects .box-container {
