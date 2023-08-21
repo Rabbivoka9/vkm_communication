@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@100;300;500&family=Sigmar&display=swap');
+
 
 :root{
-	--primary-color: #12c2b9;
-	--secondary: #dbfffe;
+	--primary-color:  #11749d;
+	--secondary: #fffdfc;
 	--black: #141414;
 	--white: #fff;
 	--box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
@@ -54,8 +56,20 @@ section{
 	margin-bottom: 3rem;
 }
 
+.heading1 {
+	position: relative;
+	color: var(--primary-color);
+	font-size: 3rem;
+	font-weight: 700;
+	margin-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
 .heading::after {
-	content: url('../images/separator.svg');
+	
 	display: block;
 	width: 10rem;
 	margin-inline: auto;
@@ -66,12 +80,12 @@ section{
 	position: relative;
 	display: inline-block;
 	margin-top: 1rem;
-	color: var(--primary-color);
+	color: #510101 ;
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	max-width: max-content;
-	border: .1rem solid var(--primary-color);
+	border: .1rem solid #510101;
 	background-color: var(--secondary);
 	padding: 1.2rem 4.5rem;
 	overflow: hidden;
@@ -88,7 +102,7 @@ section{
 	width: 200%;
 	height: 200%;
 	border-radius: 50%;
-	background-color: var(--primary-color);
+	background-color: #510101;
 	transition: 500ms ease;
 	z-index: -1;
 }
@@ -145,13 +159,13 @@ section{
 	left: 0;
 	right: 0;
 	z-index: 1000;
-       background: url('../images/home.png') no-repeat;
 	/* box-shadow: var(--box-shadow); */
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 2rem 4%;
+	background-color: white; /* Ajout de cette ligne */
 }
 
 .header .logo {
@@ -167,19 +181,33 @@ section{
 
 .header .navbar a {
 	font-size: 1.7rem;
-	color: var(--white);
+	color: rgb(2, 7, 107);
 	margin: 0 1rem;
 	padding-block: 1rem;
 }
 
 .header .navbar a:hover {
-	color: var(--primary-color);
+	color: rgb(254, 171, 5);
+}
+
+.img-femme{
+	width: 560px;
+	border-radius: 180px 50px 10px;
 }
 
 .header .navbar .hover-underline {
 	position: relative;
 	max-width: max-content;
 }
+
+
+.rs{
+   width: 20px;
+}
+
+.rs1{
+	width: 70px;
+    }
 
 .header .navbar .hover-underline::after {
 	content: '';
@@ -188,7 +216,7 @@ section{
 	bottom: 0;
 	width: 100%;
 	height: 0.5rem;
-	border-block: .1rem solid var(--primary-color);
+	border-block: .1rem solid rgb(254, 171, 5);
 	transform: scaleX(0.2);
 	opacity: 0;
 	transition: 500ms ease;
@@ -266,7 +294,7 @@ section{
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	background: url('../images/home.png') no-repeat;
+	background: url('../images/import.png') no-repeat;
 	background-size: cover;
 	background-position: center
 }
@@ -329,6 +357,16 @@ section{
 	padding: 1rem 0;
 	line-height: 1.8;
 }
+
+.contact{
+	background-color: #eee;
+	
+}
+
+.maps{
+	height: 180px;
+}
+
 
 .subjects{
 	background-color: rgb(243, 239, 239);
@@ -546,6 +584,10 @@ section{
 	color: #777;
 }
 
+.review{
+	background-color: #f4f2f2;
+}
+
 .review .slide {
 	padding: 1.5rem;
 	box-shadow: var(--box-shadow);
@@ -739,7 +781,7 @@ section{
 }
 
 .footer {
-	background-color: var(--secondary);
+	background-color: #11749d;
 	text-align: center;
 }
 
@@ -751,13 +793,13 @@ section{
 
 .footer .box-container .box h3 {
 	font-size: 2.2rem;
-	color: var(--primary-color);
+	color: var(--white);
 	padding: 1rem 0;
 }
 
 .footer .box-container .box p {
 	font-size: 1.5rem;
-	color: var(--black);
+	color: var(--white);
 	line-height: 2;
 	padding: 1rem 0;
 }
@@ -772,28 +814,28 @@ section{
 	line-height: 4.5rem;
 	border-radius: 10%;
 	font-size: 1.7rem;
-	border: .1rem solid var(--primary-color);
-	color: var(--primary-color);
+	border: .1rem solid white;
+	color: var(--white);
 	margin-right: .3rem;
 	text-align: center;
 }
 
 .footer .box-container .box .share a:hover {
-	background-color: var(--primary-color);
-	color: var(--white);
+	background-color: var(--white);
+	color: var(--primary-color);
 }
 
 .footer .box-container .box .link {
 	font-size: 1.7rem;
 	line-height: 2;
-	color: var(--black);
+	color: var(--white);
 	padding: .5rem 0;
 	text-transform: none;
 	display: block;
 }
 
 .footer .box-container .box .link:hover {
-	color: var(--primary-color);
+	color: var(--white);
 	text-decoration: underline;
 }
 
@@ -802,8 +844,8 @@ section{
 	margin-top: 3rem;
 	padding-top: 3rem;
 	text-align: center;
-	color: var(--black);
-	border-top: .1rem solid var(--primary-color);
+	color: var(--white);
+	border-top: .1rem solid var(--white);
 }
 
 @media (max-width:991px) {
