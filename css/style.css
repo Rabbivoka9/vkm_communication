@@ -159,7 +159,7 @@ section{
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	/* box-shadow: var(--box-shadow); */
+	box-shadow: var(--box-shadow); 
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -240,6 +240,7 @@ section{
 
 #menu-btn {
 	display: none;
+	color: #11749d;
 }
 
 .header .login-form {
@@ -300,7 +301,7 @@ section{
 }
 
 .home .content {
-	max-width: 50%;
+	max-width: 80%;
 }
 
 .home .content h3 {
@@ -343,11 +344,13 @@ section{
 	flex: 1 1 50rem;
 	padding-left: 6rem;
 	padding-top: 8rem;
+	text-align: justify;
 }
 
 .about .container .about-content h3 {
 	font-size: 3rem;
 	color: var(--primary-color);
+	text-align: justify;
 
 }
 
@@ -356,6 +359,7 @@ section{
 	color: #444;
 	padding: 1rem 0;
 	line-height: 1.8;
+	text-align: justify;
 }
 
 .contact{
