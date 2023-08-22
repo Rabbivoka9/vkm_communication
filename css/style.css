@@ -738,6 +738,7 @@ section{
 	color: var(--black);
 	line-height: 2;
 	padding: 1rem 0;
+	text-align: justify;
 }
 
 .contact .row {
