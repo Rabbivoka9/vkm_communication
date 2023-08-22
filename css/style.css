@@ -912,7 +912,8 @@ html {
 .card {
 	width: 490px;
 	height: 254px;
-	background: #07182E;
+	background-image: url(/images/femme.png);
+	background-size: cover;
 	position: relative;
 	display: flex;
 	place-content: center;
@@ -950,7 +951,7 @@ html {
      .card::after {
 	content: '';
 	position: absolute;
-	background-image: url(/images/femme.jpg);
+	background-image: url(/images/femme.png);
 	background-size: cover;
 	inset: 5px;
 	border-radius: 15px;
