@@ -2,6 +2,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@100;300;500&family=Sigmar&display=swap');
 
 
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 :root{
 	--primary-color:  #11749d;
 	--secondary: #fffdfc;
@@ -11,7 +13,7 @@
 }
 
 * {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -80,12 +82,12 @@ section{
 	position: relative;
 	display: inline-block;
 	margin-top: 1rem;
-	color: #510101 ;
+	color: #11749d ;
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	max-width: max-content;
-	border: .1rem solid #510101;
+	border: .1rem solid #11749d;
 	background-color: var(--secondary);
 	padding: 1.2rem 4.5rem;
 	overflow: hidden;
@@ -102,7 +104,7 @@ section{
 	width: 200%;
 	height: 200%;
 	border-radius: 50%;
-	background-color: #510101;
+	background-color: #11749d;
 	transition: 500ms ease;
 	z-index: -1;
 }
