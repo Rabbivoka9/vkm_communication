@@ -1,3 +1,4 @@
+
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
@@ -40,3 +41,36 @@ var swiper = new Swiper('.review-slider', {
 		}
 	}
 })
+
+
+// LOADER
+document.getElementById('app').classList.add("none");
+
+function showContent() {
+    document.querySelector(".container-loader").classList.add("hidden");
+    document.getElementById('app').classList.remove("none");
+}
+setTimeout(showContent, 3000);
+
+//
+
+/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+const sections = document.querySelectorAll('section[id]')
+
+window.addEventListener('scroll', scrollActive)
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.header a[href*=' + Id + ']').classList.add('active')
+        }else{
+            document.querySelector('.header a[href*=' + Id + ']').classList.remove('active')
+        }
+    })
+}

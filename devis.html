@@ -1,34 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/styleDevis.css">
-<title>Formulaire d'Inscription</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>graceagency</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-       
-       <form action="#" method="POST">
-         <label for="nom">Nom</label>
-         <input type="text" id="nom" name="nom" required>
+	<!-- <div class="container-loader">
+		<div class="loader">
+		    <div class="cercle"></div>
+		    <div class="cercle"></div>
+		</div>
+	   </div> -->
+	   <div id="app">
+			<header class="header" id="header">
 
-         <label for="email">Email</label>
-         <input type="email" id="email" name="email" required>
+					<a href="#" class="logo"> <img class="rs1" src="images/logo.png" alt="" sizes="" srcset=""></a>
 
-         <label for="nom">Services</label>
-         <input type="text" id="nom" name="nom" required>
-         
-         <label for="message">Description</label>
-         <textarea id="message" name="message" rows="4" required></textarea>
-         
-         <label for="motif">Destination </label>
-         <select id="motif" name="motif">
-           <option value="question">Kinshasa</option>
-           <option value="probleme">Ottawa</option>
-           <option value="feedback">Montréal</option>
-         </select>
-         
-         <button type="submit">Envoyer</button>
-       </form>
-     </body>
+					<nav class="navbar">
+						<a href="index.html" class="hover-underline">home</a>
+						<a href="#about" class="hover-underline">A propos</a>
+						
+					</nav>
+
+					<div class="icons">
+						
+						<div class="share">
+							<div class="fas fa-bars" id="menu-btn"></div>
+							<a href="#"> <img class="rs" src="images/facebook(3).png" alt="" srcset=""></a>
+							<a href="https://instagram.com/graceagency_canada?igshid=MzRlODBiNWFlZA=="><img class="rs" src="images/instagram(2).png" alt="" srcset=""></a>
+							<a href="#"><img class="rs" src="images/linkedin(1).png" alt="" srcset=""></a>
+						</div>
+						
+					</div>
+
+					<form action="" class="login-form">
+						<h3>login form</h3>
+						<input type="email" placeholder="enter your email" class="box">
+						<input type="password" placeholder="enter your password" class="box">
+						<div class="remember">
+							<input type="checkbox" name="" id="remember">
+							<label for="remember-me">remember-me</label>
+						</div>
+						<a href="#" class="btn">
+							<span class="text text-1">Contact</span>
+							<span class="text text-2" aria-hidden="true">login now</span>
+						</a>
+					</form>
+
+				</header>
+
+		
+			
+
+		
+
+				
+						
+
+				<section class="contact" id="contact">
+
+					<h1 class="heading">contact </h1>
+
+					<div class="row">
+						<div  class="image">
+							<img  src="images/phone.png" alt="">
+						</div>
+
+						<form action="">
+              <h3>Obtenir un Dévis</h3>
+              <input type="text" placeholder="Nom" class="box">
+              <input type="email" placeholder="Adresse mail" class="box">
+              <select class="box"> 
+                <option value="general">Nos Services</option>
+                <option value="support">Vente des Vehicules</option>
+                <option value="feedback"> Livraison à Domicile</option>  
+                <option value="feedback">Fret Maritime</option>
+                <option value="feedback">Fret Àerien</option>
+              </select>
+              
+              <textarea placeholder="Déscription" cols="30" rows="10" class="box"></textarea>
+              <select class="box"> 
+                  <option value="general">Destination</option>
+                  <option value="support">Kinshasa</option>
+                  <option value="feedback"> Ottaw</option>  
+                  <option value="feedback">Montréal</option>
+              </select>
+              <a href="#" class="btn">
+                  <span class="text text-1">Envoi</span>
+                  <span class="text text-2" aria-hidden="true">Envoi</span>
+              </a>
+          </form>
+          
+					</div>
+
+				</section>
+
+				<section class="footer">
+
+					<div class="box-container">
+
+						<div class="box">
+							<h3>Trouvez-nous ici</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ex.</p>
+							<div class="share">
+								<a href="#" class="fab fa-telegram"></a>
+								<a href="https://instagram.com/graceagency_canada?igshid=MzRlODBiNWFlZA==" class="fab fa-instagram"></a>
+								<a href="#" class="fab fa-facebook"></a>
+								<a href="#" class="fab fa-linkedin"></a>
+
+
+							</div>
+						</div>
+
+						<div class="box">
+							<h3>Contactez-nous</h3>
+							<p>+1 (438) 483-8588</p>
+							<a href="#" class="link">info@graceagency.ca</a>
+						</div>
+
+						<!-- <div class="box">
+							<h3>Localisez-Nous ici</h3>
+							<iframe class="maps" src="https://www.google.com/maps?q=9FGH%2BVVC%20Vkm%20Design%2C%20Lubumbashi%2C%20Congo-Kinshasa&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div> -->
+						
+						
+
+					</div>
+
+					<div class="credit">| all rights are reserved! by Vkm Design</div>
+
+				</section>
+	</div>
+	
+	
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
 </html>
