@@ -423,7 +423,7 @@ select{
 .about .container .about-content h3 {
 	font-size: 3rem;
 	color: var(--primary-color);
-	text-align: justify;
+	text-align: center;
 
 }
 
